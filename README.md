@@ -81,3 +81,14 @@ After `BRAND-001`, choose **one** next cycle with less guidance: perhaps a usefu
 After you approve keeping the checked change and it is merged into `main`, you can publish it. Let the agent guide you through your repository's **Settings → Pages → Source → GitHub Actions**, then **Actions → Check and publish → Run workflow** on `main`. Open the deployment URL reported by that run. Later pushes to `main` publish automatically after checks pass. Until Pages is configured, the workflow checks the project and skips publishing successfully; first setup does not require deployment.
 
 If Settings is missing or shows a 404, sign into the owning GitHub account in that browser. Terminal SSH authentication does not sign the browser in.
+
+
+## IS117 T-Shirt Research
+
+### 1. Competitor Analysis
+
+| Site | Source & Date | Observation | What it Suggests |
+| :--- | :--- | :--- | :--- |
+| **Hollister** | `https://www.hollisterco.com` — Nov 2026 | Bright, casual imagery, clean layout, prominent bundle pricing (e.g., multi-buy discounts), and beach-inspired branding. | Targets high school/college students seeking affordable, everyday casual basics. |
+| **Free People** | `https://www.freepeople.com` — Nov 2026 | Warm earthy/pastel color palette, boho editorial photography, soft typography, and close-up fabric texture detail. | Targets fashion-forward buyers willing to pay a higher price point for premium, artistic lifestyle pieces. |
+| **PacSun** | `https://www.pacsun.com` — Nov 2026 | Streetwear and skate aesthetic, oversized/boxy fit emphasis, bold typography, and dynamic video banners. | Targets Gen Z youth focused on urban trends, relaxed silhouettes, and modern skate culture. |
