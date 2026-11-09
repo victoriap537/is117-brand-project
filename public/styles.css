@@ -1,5 +1,4 @@
-/* Shared brand tokens. Change these after you agree on your brand direction.
-   Both the storefront and the live style guide use this file. */
+/* Shared starter tokens. The storefront and live guide override them together. */
 :root {
   --color-paper: #f6f5f0;
   --color-ink: #171a18;
@@ -9,6 +8,7 @@
   --color-soft: #e8eae1;
   --color-white: #fff;
   --color-danger: #992e28;
+  --color-blue: #183187;
   --font-body:
     system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
   --font-display:
@@ -39,6 +39,18 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+.brand-page {
+  --color-paper: #242629;
+  --color-ink: #f0e8dd;
+  --color-muted: #c4c6ca;
+  --color-line: #4a4e55;
+  --color-accent: #f1ca4b;
+  --color-soft: #2e3238;
+  --color-white: #f4eee5;
+  --color-danger: #ff9e96;
+  --color-blue: #183187;
 }
 
 img,
@@ -88,6 +100,10 @@ button:disabled {
 ::selection {
   background: var(--color-accent);
   color: var(--color-ink);
+}
+
+.brand-page ::selection {
+  color: var(--color-paper);
 }
 
 h1,
@@ -195,6 +211,39 @@ p + p {
   font-weight: 650;
 }
 
+.brand-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.8rem 3rem;
+  background: var(--color-accent);
+  color: var(--color-paper);
+  font-size: 0.73rem;
+  line-height: 1.5;
+}
+
+.brand-banner a {
+  flex-shrink: 0;
+  font-weight: 650;
+}
+
+.brand-symbol {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.brand-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+
+.brand-page .status-dot {
+  background: var(--color-accent);
+}
+
 .site-header {
   min-height: 106px;
   display: flex;
@@ -206,6 +255,14 @@ p + p {
 .brand-link {
   display: inline-block;
   flex-shrink: 0;
+}
+
+.brand-page .brand-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--color-ink);
+  text-decoration: none;
 }
 
 .wordmark {
@@ -264,7 +321,46 @@ p + p {
 
 .product-visual {
   position: relative;
+  margin: 0;
   background: var(--color-soft);
+}
+
+.brand-page .product-visual {
+  padding: 0.75rem;
+  background: var(--color-blue);
+  border-radius: 0.9rem 0;
+  box-shadow: 0.65rem 0.65rem 0 var(--color-accent);
+}
+
+.shirt-stage {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-soft);
+  aspect-ratio: 800 / 880;
+}
+
+.shirt-art-base {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shirt-pocket {
+  position: absolute;
+  top: 31%;
+  left: 53%;
+  z-index: 1;
+  width: clamp(2.4rem, 3.4vw, 3rem);
+  height: auto;
+}
+
+.shirt-mark {
+  position: absolute;
+  top: 65%;
+  left: 36%;
+  z-index: 1;
+  width: clamp(2.5rem, 5.75vw, 3.6rem);
+  height: auto;
 }
 
 .visual-label {
@@ -322,6 +418,141 @@ p + p {
   max-width: 430px;
 }
 
+.style-preference {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.style-preference label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.62rem 0.85rem;
+  border: 1px solid var(--color-line);
+  border-radius: 0 0.7rem;
+  color: var(--color-ink);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.style-preference label:focus-within {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.style-preference input {
+  margin: 0;
+  accent-color: var(--color-accent);
+}
+
+.preference-result {
+  margin-top: 0.9rem;
+}
+
+.preference-note {
+  max-width: 34rem;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-soft);
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.detail-callout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-line);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 0 0.8rem;
+  background: var(--color-soft);
+}
+
+.detail-zoom-window {
+  position: relative;
+  flex: 0 0 clamp(5rem, 10vw, 6.5rem);
+  overflow: hidden;
+  aspect-ratio: 1;
+  border: 2px solid var(--color-accent);
+  border-radius: 50%;
+  background: #292c31;
+}
+
+.detail-zoom-scene {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250%;
+  aspect-ratio: 800 / 880;
+  transform: translate(-41%, -69%);
+}
+
+.detail-zoom-scene img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.detail-zoom-scene .detail-zoom-mark {
+  top: 65%;
+  left: 36%;
+  width: 10%;
+  height: auto;
+}
+
+.detail-callout figcaption {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 18rem;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+}
+
+.detail-callout-label {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.styling-tip {
+  max-width: 34rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--color-line);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 0 0.8rem;
+  background: var(--color-soft);
+}
+
+.styling-tip p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.styling-tip .styling-tip-label {
+  margin-bottom: 0.4rem;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .price-row {
   display: flex;
   align-items: center;
@@ -362,6 +593,16 @@ legend {
   padding: 0;
   font-size: 0.84rem;
   font-weight: 650;
+}
+
+.style-preference legend {
+  margin-bottom: 0.4rem;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .field-help {
@@ -573,6 +814,10 @@ legend {
   margin-block: 1rem 4rem;
 }
 
+.brand-page .starter-next {
+  color: var(--color-paper);
+}
+
 .starter-next > .eyebrow {
   grid-column: 1 / -1;
 }
@@ -608,6 +853,57 @@ legend {
 
 .site-footer a {
   color: var(--color-ink);
+}
+
+.brand-page .brand-banner {
+  padding-inline: 3rem;
+}
+
+.guide-art-sample {
+  max-width: 560px;
+  margin: 1.8rem 0 0;
+  padding: 0.75rem;
+  background: var(--color-blue);
+  box-shadow: 0.5rem 0.5rem 0 var(--color-accent);
+}
+
+.guide-art-sample figcaption {
+  padding: 0.8rem 0.3rem 0.2rem;
+  color: var(--color-ink);
+  font-size: 0.72rem;
+}
+
+.logo-board-name {
+  color: var(--color-ink);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.logo-nav-size {
+  width: 34px;
+  height: 34px;
+}
+
+.logo-one-color {
+  width: 56px;
+  height: 56px;
+}
+
+.brand-page .button-primary {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-paper);
+}
+
+.brand-page .button-primary:hover {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.brand-page .starter-next .button-secondary {
+  border-color: var(--color-paper);
+  color: var(--color-paper);
 }
 
 /* Shared editorial pages */
@@ -740,6 +1036,17 @@ legend {
 
 .logo-board img {
   width: min(100%, 380px);
+}
+
+.brand-page .logo-board {
+  display: flex;
+  gap: 1.2rem;
+  background: var(--color-soft);
+}
+
+.brand-page .logo-board img {
+  width: min(45%, 180px);
+  height: auto;
 }
 
 .logo-variants {
@@ -954,6 +1261,10 @@ legend {
     padding-inline: 2rem;
   }
 
+  .brand-banner {
+    padding-inline: 2rem;
+  }
+
   .site-header {
     gap: 1.7rem;
   }
@@ -1007,6 +1318,14 @@ legend {
     padding: 0.75rem 1.25rem;
     font-size: 0.67rem;
     gap: 1rem;
+  }
+
+  .brand-banner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.67rem;
+    gap: 0.35rem;
   }
 
   .starter-notice > span {
@@ -1178,7 +1497,7 @@ legend {
   }
 
   .palette-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .color-swatch {
@@ -1294,4 +1613,14 @@ legend {
     transition: none !important;
     animation: none !important;
   }
+}
+
+.brand-page .product-information h1 {
+  max-width: 13ch;
+  font-size: clamp(2.8rem, 4.2vw, 4.25rem);
+  line-height: 1.02;
+}
+
+.brand-page .draft-label {
+  color: var(--color-paper);
 }
