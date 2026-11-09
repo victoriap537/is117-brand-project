@@ -5,7 +5,7 @@ AI-drafted task evidence, not a transcript or grade. This file may be public: re
 - **Feature:** BRAND-001 — kept and merged into `main` via PR #2
 - **Date:** 2026-11-02
 - **Conversation context available:** This conversation; earlier learner evidence was not recorded.
-- **Review status:** Earlier student-contribution excerpts were confirmed accurate on 2026-11-05. Prompt and CI status excerpts were confirmed accurate on 2026-11-09. The new PR review and merge-decision note is awaiting accuracy review. Accuracy review does not validate customer benefit.
+- **Review status:** Earlier student-contribution excerpts were confirmed accurate on 2026-11-05. Prompt, CI status, PR review, and merge-decision excerpts were confirmed accurate on 2026-11-09. Accuracy review does not validate customer benefit.
 
 ## Student contributions
 
