@@ -105,3 +105,18 @@ If Settings is missing or shows a 404, sign into the owning GitHub account in th
 
 #### Selected Audience & Rationale
 We are targeting **Position A** and **Persona 1 ("Maya")**. Our website layout uses high-contrast typography, bright imagery, and clear product information to make finding and buying modern, affordable daily basics fast and simple.
+
+### 3. Visual Look, Brand Character & Honest Persuasion
+
+#### Visual Look & Aesthetic
+- **Color Palette:** High-contrast monochromatic scheme (pure white background, dark charcoal text) with subtle neutral accent colors to keep focus on the white t-shirt styles.
+- **Typography:** Clean, modern sans-serif fonts (e.g., Inter / Helvetica) for high readability across desktop and mobile screens.
+- **Imagery:** Bright, natural light product photography with simple studio backgrounds showing real fit and layering options.
+
+#### Brand Character
+- **Adjectives:** Unpretentious, accessible, modern, clear, reliable.
+- **Vibe:** Everyday essential wardrobe staples for busy students.
+
+#### Honest Persuasion Strategy
+- **Transparent Specifications:** Clear fabric details (100% breathable cotton weight), sizing charts with model measurements, and straightforward care instructions.
+- **No Deceptive Tactics:** Eliminating false urgency triggers (no fake countdown timers, aggressive pop-up overlays, or hidden fees at checkout) to build authentic customer trust.
