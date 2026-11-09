@@ -1,6 +1,6 @@
 # IS117 Brand Studio
 
-**The same white T-shirt can carry very different meanings.** This copy is developing `BRAND-001`: a provisional Pixis storefront and live style guide on `feature/brand-001-first-branded-storefront`. The audience and visitor benefits remain hypotheses; the shirt artwork is illustrative concept art, not product photography.
+**The same white T-shirt can carry very different meanings.** `BRAND-001` is merged into `main` via [PR #2](https://github.com/victoriap537/is117-brand-project/pull/2): a provisional Pixis storefront and live style guide. The audience and visitor benefits remain hypotheses; the shirt artwork is illustrative concept art, not product photography. The site has not been published to GitHub Pages.
 
 The demo still has a size selector and temporary bag, but no checkout, payment, accounts, or persistence. You make the brand decisions; the agent helps you explore, build, check, and revise them.
 
