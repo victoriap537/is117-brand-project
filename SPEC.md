@@ -9,7 +9,7 @@ This is the durable agreement between the learner and agent. Keep it concise and
 - Stage: Baseline tried; BRAND-001 scope agreed; early brief drafted; a postmodernist draft was iterated; the first Pixis storefront and live guide are implemented.
 - Current feature: `BRAND-001` — first branded storefront and live style guide.
 - Status: In progress on `feature/brand-001-first-branded-storefront`.
-- Next small decision: PR #2 is open for later review; the learner chose not to merge it now. The learner confirmed the final yellow, single-line preference prompt and reviewed the updated learning record; the P-like symbol is approved as a draft, with no final identity or customer benefit claimed.
+- Next small decision: PR #2 is open for later review; the learner chose not to merge it now. In a prompted visual review, the learner said the storefront matched the desired navy-and-yellow calm look and the live guide felt consistent; no visual changes were identified. This does not establish an independent explanation or customer validation.
 
 ## Product boundary
 
