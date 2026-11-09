@@ -92,3 +92,16 @@ If Settings is missing or shows a 404, sign into the owning GitHub account in th
 | **Hollister** | `https://www.hollisterco.com` — Nov 2026 | Bright, casual imagery, clean layout, prominent bundle pricing (e.g., multi-buy discounts), and beach-inspired branding. | Targets high school/college students seeking affordable, everyday casual basics. |
 | **Free People** | `https://www.freepeople.com` — Nov 2026 | Warm earthy/pastel color palette, boho editorial photography, soft typography, and close-up fabric texture detail. | Targets fashion-forward buyers willing to pay a higher price point for premium, artistic lifestyle pieces. |
 | **PacSun** | `https://www.pacsun.com` — Nov 2026 | Streetwear and skate aesthetic, oversized/boxy fit emphasis, bold typography, and dynamic video banners. | Targets Gen Z youth focused on urban trends, relaxed silhouettes, and modern skate culture. |
+
+### 2. Positioning & Personas
+
+#### Market Positions
+* **Position A (Trendy & Affordable Everyday Staples):** Accessible, budget-friendly white tees focused on casual style, comfortable daily wear, and multi-buy savings.
+* **Position B (Premium Artistic & Textured Lifestyle Wear):** Higher-end, uniquely styled white tees featuring relaxed cuts, premium textured fabrics, and bohemian/editorial aesthetic details.
+
+#### Persona Hypotheses
+* **Persona 1 ("Maya the College Student"):** Looking for stylish, affordable basic white tees to layer for everyday campus life without overspending.
+* **Persona 2 ("Taylor the Trend-Conscious Creative"):** Seeking premium, relaxed-fit tees with unique fabric textures and vintage washes to elevate a curated lifestyle wardrobe.
+
+#### Selected Audience & Rationale
+We are targeting **Position A** and **Persona 1 ("Maya")**. Our website layout uses high-contrast typography, bright imagery, and clear product information to make finding and buying modern, affordable daily basics fast and simple.
