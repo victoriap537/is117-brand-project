@@ -5,33 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="The live, neutral brand board for the IS117 T-shirt storefront. Shared tokens and assets keep design choices connected to the page."
+      content="The live Pixis brand board, sharing the storefront's colors, type, logo, artwork, and components."
     />
-    <title>Live style guide — Your Brand starter</title>
+    <title>Pixis — live style guide</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
     <script src="styleguide.js" defer></script>
   </head>
-  <body>
+  <body class="brand-page">
     <a class="skip-link" href="#main">Skip to content</a>
-    <aside class="starter-notice" aria-label="Starter information">
+    <aside class="brand-banner" aria-label="Pixis brand promise">
       <span
-        ><strong>Neutral examples.</strong> Replace this identity after your
-        decisions; this board shares the storefront’s CSS and logo.</span
-      ><a href="studio.html">Studio brief <span aria-hidden="true">↗</span></a>
+        ><strong>Pixis.</strong> A calm everyday look, with one detail that
+        stands out.</span
+      ><a href="index.html"
+        >View the storefront <span aria-hidden="true">↗</span></a
+      >
     </aside>
     <header class="site-header wrap">
-      <a
-        class="brand-link"
-        href="index.html"
-        aria-label="Your Brand storefront home"
+      <a class="brand-link" href="index.html" aria-label="Pixis storefront home"
         ><img
-          class="wordmark"
-          src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
-          width="175"
-          height="26"
-      /></a>
+          class="brand-symbol"
+          src="assets/pixis-symbol.svg"
+          alt=""
+          width="34"
+          height="34"
+        /><span class="brand-name">Pixis</span></a
+      >
       <nav class="main-nav" aria-label="Main navigation">
         <a class="nav-link" href="index.html">Shop</a
         ><a class="nav-link" href="styleguide.html" aria-current="page"
@@ -45,23 +45,23 @@
     <main id="main">
       <section class="page-hero wrap" aria-labelledby="guide-title">
         <p class="eyebrow">
-          <span class="status-dot" aria-hidden="true"></span> Identity / version
-          00 / neutral starter
+          <span class="status-dot" aria-hidden="true"></span> Pixis / working
+          identity / 01
         </p>
-        <h1 id="guide-title">A brand, kept<br />in one place.</h1>
+        <h1 id="guide-title">A little color.<br />A calm point of view.</h1>
         <p class="hero-summary">
-          A working board for the choices behind the storefront.
-          <strong>These are neutral examples, ready to replace.</strong> Decide
-          who the brand serves before making its identity your own.
+          A live reference for the storefront's provisional identity.
+          <strong>One white T-shirt, one unexpected detail.</strong> The
+          audience and benefit remain hypotheses, not customer research.
         </p>
       </section>
       <nav class="page-subnav wrap" aria-label="Style guide sections">
         <a class="section-link" href="#direction">00 Direction</a
-        ><a class="section-link" href="#logo">01 Logo</a
+        ><a class="section-link" href="#logo">01 Mark</a
         ><a class="section-link" href="#palette">02 Color</a
         ><a class="section-link" href="#type">03 Type</a
         ><a class="section-link" href="#spacing">04 Space</a
-        ><a class="section-link" href="#buttons">05 Buttons</a
+        ><a class="section-link" href="#buttons">05 Components</a
         ><a class="section-link" href="#voice">06 Voice</a>
       </nav>
 
@@ -72,32 +72,70 @@
       >
         <div class="section-heading">
           <span class="section-number">00 / Direction</span>
-          <h2 id="direction-title">Decisions first.</h2>
-          <p>Record your agreed reasoning in SPEC.md, then reflect it here.</p>
+          <h2 id="direction-title">Calm, with a twist.</h2>
+          <p>A provisional direction, recorded in <code>SPEC.md</code>.</p>
         </div>
         <div class="guide-content">
-          <span class="draft-label">Not a completed brand strategy</span>
+          <span class="draft-label"
+            >Working identity / not customer-validated</span
+          >
           <div class="decision-grid">
             <div>
-              <h3>Audience</h3>
-              <p class="undecided">To decide</p>
+              <h3>Primary audience</h3>
+              <p class="undecided">Casual cafe meetup</p>
               <p>
-                Use your personas to identify a need this page should answer.
+                Wants a relaxed look with one distinctive detail; worries a
+                plain shirt may feel too ordinary. This is an unvalidated
+                hypothesis.
               </p>
             </div>
             <div>
-              <h3>Archetype</h3>
-              <p class="undecided">To decide</p>
-              <p>Choose one and explain the personality it gives the brand.</p>
+              <h3>Brand character</h3>
+              <p class="undecided">Sage / Jester</p>
+              <p>
+                A calm, clear Sage voice, with a lightly witty Jester influence.
+                These describe the brand, not its buyers.
+              </p>
             </div>
             <div>
               <h3>Visual direction</h3>
-              <p class="undecided">To decide</p>
+              <p class="undecided">Postmodernist</p>
               <p>
-                Compare approaches, then justify your choice for this audience.
+                Charcoal, yellow, and blue frame a small navy-and-yellow shirt
+                graphic. The system fonts and information placement stay
+                familiar.
               </p>
             </div>
           </div>
+          <figure class="guide-art-sample">
+            <div class="shirt-stage">
+              <img
+                class="shirt-art-base"
+                src="assets/white-shirt.svg"
+                alt="Illustration of the white Pixis T-shirt concept on charcoal"
+                width="800"
+                height="880"
+              />
+              <img
+                class="shirt-pocket"
+                src="assets/shirt-pocket.svg"
+                alt=""
+                width="64"
+                height="88"
+              />
+              <img
+                class="shirt-mark"
+                src="assets/shirt-mark.svg"
+                alt=""
+                width="120"
+                height="96"
+              />
+            </div>
+            <figcaption>
+              Shared shirt illustration and layered concept details. This is not
+              product photography or a construction claim.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -107,51 +145,48 @@
         aria-labelledby="logo-title"
       >
         <div class="section-heading">
-          <span class="section-number">01 / Logo</span>
-          <h2 id="logo-title">A placeholder<br />with a purpose.</h2>
+          <span class="section-number">01 / Mark</span>
+          <h2 id="logo-title">A P, made<br />unexpected.</h2>
           <p>
-            Replace after your decisions. The same SVG appears on the
+            A one-color symbol, approved as a draft and shared with the
             storefront.
           </p>
         </div>
         <div class="guide-content">
           <div class="logo-board">
             <img
-              src="assets/wordmark.svg"
-              alt="Neutral starter wordmark"
-              width="350"
-              height="52"
-            />
+              src="assets/pixis-symbol.svg"
+              alt="Pixis angular P-like symbol in yellow"
+              width="96"
+              height="96"
+            /><span class="logo-board-name">PIXIS</span>
           </div>
           <div class="logo-variants">
             <div class="logo-variant">
               <img
-                class="logo-small"
-                src="assets/wordmark.svg"
-                alt="Neutral starter wordmark at a small size"
-                width="110"
-                height="16"
+                class="logo-nav-size"
+                src="assets/pixis-symbol.svg"
+                alt="Pixis symbol at its storefront navigation size"
+                width="34"
+                height="34"
               />
-              <p>Small-size preview · 110px wide</p>
+              <p>Actual navigation size · 34px</p>
             </div>
             <div class="logo-variant">
               <img
-                class="logo-mono"
-                src="assets/wordmark.svg"
-                alt="Neutral starter wordmark in monochrome"
-                width="190"
-                height="28"
+                class="logo-one-color"
+                src="assets/pixis-symbol.svg"
+                alt="Same Pixis symbol shown in its single yellow color"
+                width="56"
+                height="56"
               />
-              <p>Monochrome preview · one color</p>
+              <p>Single-color SVG · yellow on charcoal</p>
             </div>
           </div>
           <p class="guide-note">
-            Check your replacement at the actual header size and in one color. A
-            simple original wordmark is enough; the same SVG may serve each
-            presentation if it works. This one-color preview uses transparent
-            artwork with a flat black treatment. Give it breathing room and a
-            useful text alternative. Keep the shared source at
-            <code>assets/wordmark.svg</code>.
+            The storefront navigation and both samples use the same SVG asset.
+            It is a provisional draft, not trademark-cleared. Give the mark
+            breathing room and keep its symbol paired with the Pixis name.
           </p>
         </div>
       </section>
@@ -165,8 +200,8 @@
           <span class="section-number">02 / Color</span>
           <h2 id="palette-title">Color has<br />a job to do.</h2>
           <p>
-            Neutral starter roles. The swatches and values come from the same
-            shared CSS tokens.
+            The swatches and values read the same shared CSS tokens used on the
+            storefront.
           </p>
         </div>
         <div class="guide-content">
@@ -176,7 +211,7 @@
                 class="color-swatch"
                 style="--swatch-color: var(--color-paper)"
               ></div>
-              <h3>Paper</h3>
+              <h3>Charcoal</h3>
               <code data-color-token="--color-paper">CSS token</code>
               <p>Page background</p>
             </article>
@@ -185,27 +220,27 @@
                 class="color-swatch"
                 style="--swatch-color: var(--color-ink)"
               ></div>
-              <h3>Ink</h3>
+              <h3>Warm white</h3>
               <code data-color-token="--color-ink">CSS token</code>
-              <p>Text and primary action</p>
+              <p>Primary text</p>
             </article>
             <article class="palette-card">
               <div
                 class="color-swatch"
                 style="--swatch-color: var(--color-accent)"
               ></div>
-              <h3>Accent</h3>
+              <h3>Yellow</h3>
               <code data-color-token="--color-accent">CSS token</code>
-              <p>Starter notice and emphasis</p>
+              <p>Logo, emphasis, and action</p>
             </article>
             <article class="palette-card">
               <div
                 class="color-swatch"
                 style="--swatch-color: var(--color-soft)"
               ></div>
-              <h3>Soft</h3>
+              <h3>Soft charcoal</h3>
               <code data-color-token="--color-soft">CSS token</code>
-              <p>Image and example surfaces</p>
+              <p>Supporting surfaces</p>
             </article>
             <article class="palette-card">
               <div
@@ -215,6 +250,15 @@
               <h3>Muted</h3>
               <code data-color-token="--color-muted">CSS token</code>
               <p>Supporting text</p>
+            </article>
+            <article class="palette-card">
+              <div
+                class="color-swatch"
+                style="--swatch-color: var(--color-blue)"
+              ></div>
+              <h3>Blue</h3>
+              <code data-color-token="--color-blue">CSS token</code>
+              <p>Frame and selected details</p>
             </article>
           </div>
           <p class="guide-note">
@@ -239,22 +283,21 @@
         </div>
         <div class="guide-content">
           <div class="type-specimen">
-            <span class="type-label"
-              >Display / shared display family / placeholder copy</span
-            >
-            <p class="type-display">Your message<br />starts here.</p>
+            <span class="type-label">Display / shared system family</span>
+            <p class="type-display">
+              Easygoing at a glance.<br />A little unexpected.
+            </p>
           </div>
           <div class="type-specimen">
             <span class="type-label">Body / shared body family</span>
             <p class="type-body">
-              Use clear language to help someone understand the product and
-              choose their next step. Keep the words grounded in what you
-              actually know.
+              A calm everyday look, with one small colorful detail. The same
+              white T-shirt, imagined for a casual cafe meetup.
             </p>
           </div>
           <div class="type-specimen">
             <span class="type-label">Label / system monospace</span>
-            <p class="type-mono">One product. Deliberate choices.</p>
+            <p class="type-mono">Pixis / concept illustration / demo only</p>
           </div>
         </div>
       </section>
@@ -338,7 +381,7 @@
         <div class="section-heading">
           <span class="section-number">05 / Interaction</span>
           <h2 id="buttons-title">The next<br />step, visible.</h2>
-          <p>These visual samples use the storefront’s button classes.</p>
+          <p>These visual samples use the storefront’s shared components.</p>
         </div>
         <div class="guide-content">
           <div class="button-samples">
@@ -365,23 +408,28 @@
           <span class="section-number">06 / Voice</span>
           <h2 id="voice-title">Words are<br />design, too.</h2>
           <p>
-            Replace this neutral example after choosing your audience and
-            archetype.
+            A calm, creative, lightly witty voice for the provisional audience
+            hypothesis.
           </p>
         </div>
         <div class="guide-content">
           <div class="voice-grid">
             <div>
-              <h3>Neutral interface example</h3>
-              <p class="voice-example">“Choose a size.”</p>
-              <p>Short, direct, and specific about the next action.</p>
+              <h3>Promise / AI-drafted, learner-approved</h3>
+              <p class="voice-example">
+                “A calm everyday look with one detail that stands out.”
+              </p>
+              <p>
+                “Easygoing at a glance. A little unexpected up close.” is the
+                approved example line.
+              </p>
             </div>
             <div>
-              <h3>Your brand voice is still open</h3>
+              <h3>Keep the claim honest</h3>
               <p>
-                Decide how your brand should sound and show that with a short
-                sample. Use honest claims. Ethical persuasion helps people make
-                a choice without invented reviews, urgency, or authority.
+                The free styling idea is a suggestion, not a proven customer
+                benefit. No reviews, urgency, product-material claims, or
+                checkout are implied.
               </p>
             </div>
           </div>
@@ -390,11 +438,10 @@
 
       <div class="guide-footer-note wrap">
         <p>
-          <strong>A living reference.</strong> Change the shared tokens and
-          logo, then compare this board with the storefront at the same width.
-          Check the logo, typography, components, color roles, and voice text;
-          sharing a stylesheet alone does not keep every example current. Save
-          the reason for your choices in SPEC.
+          <strong>A living reference.</strong> The storefront and this board
+          share colors, type, components, logo, and shirt illustration. Compare
+          them at the same width; the brand and audience remain provisional
+          until reviewed with real visitors.
         </p>
         <a href="index.html"
           >View the storefront <span aria-hidden="true">↗</span></a
@@ -402,12 +449,9 @@
       </div>
     </main>
     <footer class="site-footer wrap">
-      <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
-      </p>
-      <p class="footer-tagline">Fictional product. Real design decisions.</p>
-      <a href="https://github.com/kaw393939/is117-brand-studio#readme"
+      <p>Pixis <span class="footer-separator"> / </span> Working identity</p>
+      <p class="footer-tagline">Concept artwork. No product claims.</p>
+      <a href="https://github.com/victoriap537/is117-brand-project#readme"
         >Project README <span aria-hidden="true">↗</span></a
       >
     </footer>

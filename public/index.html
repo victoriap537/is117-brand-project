@@ -5,36 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="An unfinished, neutral T-shirt storefront for the IS117 Brand Studio. Build a brand through deliberate, visible design choices."
+      content="Pixis imagines a calm everyday white T-shirt with one colorful detail. Concept art for the IS117 Brand Studio."
     />
-    <title>Your Brand — neutral storefront starter</title>
+    <title>Pixis — a little unexpected up close</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
     <script src="shop.js" defer></script>
   </head>
-  <body>
+  <body class="brand-page">
     <a class="skip-link" href="#main">Skip to content</a>
-    <aside class="starter-notice" aria-label="Starter information">
+    <aside class="brand-banner" aria-label="Pixis brand promise">
       <span
-        ><strong>Unfinished by design.</strong> This is a neutral teaching
-        starter. Replace its identity after your brand decisions.</span
+        ><strong>Pixis.</strong> A calm everyday look, with one detail that
+        stands out.</span
       >
-      <a href="studio.html"
-        >Enter the studio <span aria-hidden="true">↗</span></a
+      <a href="styleguide.html"
+        >See the live guide <span aria-hidden="true">↗</span></a
       >
     </aside>
     <header class="site-header wrap">
-      <a
-        class="brand-link"
-        href="index.html"
-        aria-label="Your Brand storefront home"
+      <a class="brand-link" href="index.html" aria-label="Pixis storefront home"
         ><img
-          class="wordmark"
-          src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
-          width="175"
-          height="26"
-      /></a>
+          class="brand-symbol"
+          src="assets/pixis-symbol.svg"
+          alt=""
+          width="34"
+          height="34"
+        /><span class="brand-name">Pixis</span></a
+      >
       <nav class="main-nav" aria-label="Main navigation">
         <a class="nav-link" href="index.html" aria-current="page">Shop</a>
         <a class="nav-link" href="styleguide.html">Style guide</a>
@@ -49,35 +47,114 @@
 
     <main id="main">
       <section class="product-section wrap" aria-labelledby="product-title">
-        <div class="product-visual">
+        <figure class="product-visual">
           <div class="visual-label">
-            <span>001 / The starting point</span><span>Unbranded</span>
+            <span>Pixis / concept artwork</span><span>White tee / 001</span>
           </div>
-          <img
-            class="shirt-image"
-            src="assets/white-shirt.svg"
-            alt="Plain white, unbranded short-sleeved T-shirt"
-            width="800"
-            height="880"
-            fetchpriority="high"
-          />
-          <div class="image-caption">
-            <span>One product. Room for your point of view.</span
+          <div class="shirt-stage">
+            <img
+              class="shirt-art-base"
+              src="assets/white-shirt.svg"
+              alt="Illustration of a white short-sleeved T-shirt on charcoal, with a navy pocket patch on the upper-right chest and a navy-and-yellow abstract mark near the lower-left front"
+              width="800"
+              height="880"
+              fetchpriority="high"
+            />
+            <img
+              class="shirt-pocket"
+              src="assets/shirt-pocket.svg"
+              alt=""
+              width="64"
+              height="88"
+            />
+            <img
+              class="shirt-mark"
+              src="assets/shirt-mark.svg"
+              alt=""
+              width="120"
+              height="96"
+            />
+          </div>
+          <figcaption class="image-caption" id="shirt-caption">
+            <span>One white shirt. One unexpected detail.</span
             ><span aria-hidden="true">↙</span>
-          </div>
-        </div>
+          </figcaption>
+        </figure>
         <div class="product-information">
           <p class="eyebrow">
-            <span class="status-dot" aria-hidden="true"></span> Neutral product
-            / demo only
+            <span class="status-dot" aria-hidden="true"></span> Pixis / concept
+            only
           </p>
-          <h1 id="product-title">The white<br />T-shirt.</h1>
-          <p class="product-intro">A plain shirt. A place to begin.</p>
+          <h1 id="product-title">
+            Easygoing at a glance. A little unexpected up close.
+          </h1>
+          <p class="product-intro">
+            A calm everyday look, with one small colorful detail.
+          </p>
           <p class="muted product-description">
-            This starter has a working product page and room for a brand. Its
-            audience, personality, message, and visual direction are still yours
-            to decide.
+            The same white T-shirt, imagined for a casual cafe meetup. The
+            artwork is an illustration, not a product photograph.
           </p>
+          <fieldset class="style-preference" id="style-preference">
+            <legend>What would you like to see?</legend>
+            <label>
+              <input type="radio" name="style-preference" value="relaxed" />
+              <span>Keep it relaxed</span>
+            </label>
+            <label>
+              <input type="radio" name="style-preference" value="detail" />
+              <span>Show me the graphic detail</span>
+            </label>
+          </fieldset>
+          <div
+            class="preference-result"
+            id="preference-result"
+            aria-live="polite"
+            aria-atomic="true"
+            hidden
+          >
+            <p class="preference-note" data-preference-panel="relaxed" hidden>
+              The white shirt stays the main visual, with its small
+              navy-and-yellow concept mark as an accent.
+            </p>
+            <div data-preference-panel="detail" hidden>
+              <figure class="detail-callout">
+                <div class="detail-zoom-window" aria-hidden="true">
+                  <div class="detail-zoom-scene">
+                    <img
+                      src="assets/white-shirt.svg"
+                      alt=""
+                      width="800"
+                      height="880"
+                    />
+                    <img
+                      class="detail-zoom-mark"
+                      src="assets/shirt-mark.svg"
+                      alt=""
+                      width="120"
+                      height="96"
+                    />
+                  </div>
+                </div>
+                <figcaption>
+                  <span class="detail-callout-label">Symbol / close-up</span>
+                  <span
+                    >Cropped from the shirt illustration to show the symbol in
+                    place.</span
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <aside class="styling-tip" aria-labelledby="styling-tip-title">
+            <p class="styling-tip-label" id="styling-tip-title">
+              Free styling idea / no sign-up
+            </p>
+            <p>
+              For this navy-and-yellow concept, echo one shade in an accessory
+              to make the look feel intentional while keeping it relaxed.
+            </p>
+          </aside>
           <div class="price-row">
             <p class="price">$28 <span>USD</span></p>
             <span class="micro-label">Fictional demo price</span>
@@ -129,11 +206,11 @@
             </div>
             <div>
               <dt>Brand identity</dt>
-              <dd>Not decided yet</dd>
+              <dd>Pixis / provisional</dd>
             </div>
             <div>
-              <dt>Product claims</dt>
-              <dd>None supplied</dd>
+              <dt>Artwork</dt>
+              <dd>Concept illustration</dd>
             </div>
           </dl>
         </div>
@@ -169,30 +246,30 @@
       </section>
 
       <section class="starter-next wrap" aria-labelledby="next-title">
-        <p class="eyebrow">For the person building this site</p>
-        <h2 id="next-title">The shirt stays.<br />The story is your work.</h2>
+        <p class="eyebrow">A small detail, a calmer whole</p>
+        <h2 id="next-title">
+          Easygoing at a glance.<br />A little unexpected.
+        </h2>
         <div>
           <p>
-            Choose who this is for, decide what the brand should express, and
-            make those choices visible. Keep the storefront and its
-            <a href="styleguide.html">live style guide</a> in sync.
+            Pixis is a working brand direction for one white T-shirt. Explore
+            its colors, type, logo, and voice in the
+            <a href="styleguide.html">live style guide</a>.
           </p>
-          <a class="button button-secondary" href="studio.html"
-            >See the studio brief <span aria-hidden="true">↗</span></a
+          <a class="button button-secondary" href="styleguide.html"
+            >Explore the guide <span aria-hidden="true">↗</span></a
           >
         </div>
       </section>
     </main>
 
     <footer class="site-footer wrap">
-      <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
-      </p>
-      <p class="footer-tagline">Fictional product. Real design decisions.</p>
-      <a href="https://github.com/kaw393939/is117-brand-studio#readme"
+      <p>Pixis <span class="footer-separator"> / </span> Concept artwork</p>
+      <p class="footer-tagline">Fictional demo. No order or payment.</p>
+      <a href="https://github.com/victoriap537/is117-brand-project#readme"
         >Project README <span aria-hidden="true">↗</span></a
       >
     </footer>
+    <script src="brand-preference.js" defer></script>
   </body>
 </html>

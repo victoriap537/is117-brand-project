@@ -1,0 +1,720 @@
+.exploration-page {
+  --preview-blue: #2048b8;
+  --preview-coral: #e85a42;
+  --preview-yellow: #f1ca4b;
+
+  min-width: 320px;
+  background: var(--color-paper);
+}
+
+.exploration-page .preview-wrap {
+  width: min(calc(100% - 3rem), 1320px);
+  margin-inline: auto;
+}
+
+.preview-header {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.preview-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 1.05rem;
+  font-weight: 750;
+  letter-spacing: -0.06em;
+  text-decoration: none;
+}
+
+.draft-logo-mark {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.preview-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.5rem;
+  font-size: 0.75rem;
+}
+
+.preview-kicker {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.67rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding-block: 1.5rem 4.5rem;
+}
+
+.hero-art {
+  position: relative;
+  min-width: 0;
+}
+
+.art-label {
+  position: absolute;
+  z-index: 2;
+  inset: 1.1rem 1.2rem auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.shirt-stage {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-soft);
+  aspect-ratio: 800 / 880;
+}
+
+.shirt-stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.concept-mark {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  width: clamp(2.5rem, 5vw, 3.6rem);
+  aspect-ratio: 1;
+  border: 0.28rem solid var(--preview-blue);
+  border-radius: 50%;
+  background: var(--color-white);
+  transform: translateX(-50%);
+}
+
+.concept-mark::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  width: 0.8rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--preview-coral);
+  content: "";
+}
+
+.art-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  border-top: 1px solid var(--color-line);
+  font-family: var(--font-mono);
+  font-size: 0.61rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero-copy {
+  max-width: 600px;
+  padding-block: 1rem;
+}
+
+.hero-copy h1 {
+  margin-top: 1.2rem;
+  font-size: clamp(2.8rem, 5.2vw, 6rem);
+  line-height: 0.99;
+  letter-spacing: -0.075em;
+}
+
+.hero-support {
+  max-width: 34rem;
+  margin-top: 1.4rem;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.preview-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 3.25rem;
+  margin-top: 1.7rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-ink);
+  background: var(--color-ink);
+  color: var(--color-white);
+  font-size: 0.8rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.preview-action:hover {
+  background: var(--preview-blue);
+}
+
+.preview-action span {
+  font-size: 1.15rem;
+}
+
+.demo-note {
+  margin-top: 0.7rem;
+  color: var(--color-muted);
+  font-size: 0.7rem;
+}
+
+.preview-facts {
+  margin: 1.5rem 0 0;
+}
+
+.preview-facts div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.55rem;
+  border-top: 1px solid var(--color-line);
+  font-size: 0.72rem;
+}
+
+.preview-facts dt {
+  color: var(--color-muted);
+}
+
+.preview-facts dd {
+  margin: 0;
+  font-weight: 550;
+  text-align: right;
+}
+
+.design-notes {
+  padding-block: 2rem 3.5rem;
+  border-top: 1px solid var(--color-line);
+}
+
+.design-notes h2 {
+  margin-bottom: 1.4rem;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.notes-grid div {
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--color-line);
+}
+
+.notes-grid dt {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.notes-grid dd {
+  margin: 0.55rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+}
+
+.notes-grid a {
+  color: var(--color-ink);
+}
+
+.preview-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.2rem;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-muted);
+  font-size: 0.7rem;
+}
+
+.direction-modernist .hero-art {
+  border-top: 1px solid var(--color-ink);
+  border-left: 1px solid var(--color-ink);
+}
+
+.direction-modernist .art-caption {
+  border-color: var(--color-ink);
+}
+
+.direction-modernist .preview-action {
+  border-color: var(--preview-blue);
+  background: var(--preview-blue);
+}
+
+.direction-postmodernist .preview-action {
+  border-color: var(--color-ink);
+  border-radius: 0 1.2rem;
+  background: var(--preview-yellow);
+  color: var(--color-ink);
+}
+
+.postmodernist-draft-page .preview-action {
+  border-color: var(--preview-yellow);
+  background: var(--preview-yellow);
+  color: #fff7ec;
+}
+
+.direction-postmodernist .preview-action:hover {
+  background: var(--preview-coral);
+}
+
+.direction-modernist .preview-action:hover {
+  background: var(--color-ink);
+}
+
+.direction-postmodernist {
+  background: #fff8eb;
+}
+
+.direction-postmodernist .preview-header {
+  border-bottom: 3px double #183187;
+}
+
+.direction-postmodernist .preview-brand {
+  color: #183187;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.direction-postmodernist .hero-art {
+  padding: 1rem;
+  border-radius: 2rem 0;
+  background: #183187;
+  box-shadow: 0.9rem 0.9rem 0 var(--preview-yellow);
+}
+
+.direction-postmodernist .hero-art::before {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--preview-coral);
+  content: "";
+}
+
+.direction-postmodernist .shirt-stage {
+  z-index: 1;
+  border-radius: 1.2rem 0;
+}
+
+.direction-postmodernist .art-label {
+  inset: 1.5rem 1.5rem auto;
+  color: var(--color-ink);
+}
+
+.direction-postmodernist .art-caption {
+  position: relative;
+  z-index: 1;
+  margin-top: 0.35rem;
+  border: 0;
+  border-radius: 0 0 1rem;
+  background: var(--preview-yellow);
+}
+
+.direction-postmodernist .hero-copy h1 {
+  color: #183187;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+}
+
+.direction-postmodernist .hero-support {
+  color: #3f3c38;
+}
+
+.compare-intro {
+  padding-block: 3rem 2rem;
+}
+
+.comparison-page .compare-intro h1 {
+  max-width: 900px;
+  margin-top: 1rem;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  line-height: 1;
+}
+
+.compare-description {
+  max-width: 48rem;
+  margin-top: 1rem;
+  color: var(--color-muted);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.comparison-card {
+  min-width: 0;
+  border: 1px solid var(--color-line);
+  background: var(--color-white);
+}
+
+.comparison-card header {
+  padding: 1rem 1.2rem;
+}
+
+.comparison-card h2 {
+  font-size: 1.25rem;
+}
+
+.comparison-card iframe {
+  display: block;
+  width: 100%;
+  height: 720px;
+  border: 0;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.comparison-card > p,
+.comparison-card > a {
+  display: block;
+  margin: 1rem 1.2rem;
+  font-size: 0.78rem;
+}
+
+.comparison-card > p {
+  color: var(--color-muted);
+}
+
+.comparison-card > a {
+  font-weight: 650;
+}
+
+.comparison-reminder {
+  padding-block: 1.5rem 3rem;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-muted);
+  font-size: 0.78rem;
+}
+
+.draft-disclaimer {
+  padding-block: 1.5rem 3rem;
+  border-top: 1px solid #183187;
+}
+
+.draft-disclaimer h2 {
+  max-width: 22ch;
+  margin-top: 0.8rem;
+  color: #183187;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  font-style: italic;
+}
+
+.draft-disclaimer > p:last-child {
+  max-width: 48rem;
+  margin-top: 0.8rem;
+  color: #3f3c38;
+  font-size: 0.88rem;
+}
+
+@media (width <= 760px) {
+  .exploration-page .preview-wrap {
+    width: min(calc(100% - 2rem), 1320px);
+  }
+
+  .preview-header {
+    align-items: flex-start;
+    padding-block: 1rem;
+  }
+
+  .preview-nav {
+    justify-content: flex-end;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 1rem 3rem;
+  }
+
+  .hero-copy {
+    grid-row: 1;
+  }
+
+  .hero-art {
+    grid-row: 2;
+  }
+
+  .hero-copy h1 {
+    max-width: 14ch;
+    font-size: clamp(2.8rem, 11vw, 4.3rem);
+  }
+
+  .notes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-card iframe {
+    height: 700px;
+  }
+}
+
+@media (width <= 420px) {
+  .preview-kicker {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .preview-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .preview-nav {
+    justify-content: flex-start;
+  }
+
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-footer {
+    flex-direction: column;
+  }
+}
+
+.postmodernist-draft-page {
+  --color-paper: #242629;
+  --color-ink: #f0e8dd;
+  --color-muted: #c4c6ca;
+  --color-line: #4a4e55;
+  --color-soft: #363a41;
+  --color-white: #f4eee5;
+
+  background: var(--color-paper);
+}
+
+.postmodernist-draft-page .preview-brand,
+.postmodernist-draft-page .hero-copy h1,
+.postmodernist-draft-page .draft-disclaimer h2 {
+  color: #a9b9ff;
+}
+
+.postmodernist-draft-page .hero-art::before {
+  content: none;
+}
+
+.postmodernist-draft-page .shirt-stage {
+  background: #292c31;
+}
+
+.postmodernist-draft-page .shirt-pocket {
+  position: absolute;
+  top: 31%;
+  left: 53%;
+  z-index: 1;
+  width: clamp(2.4rem, 3.4vw, 3rem);
+  height: auto;
+}
+
+.postmodernist-draft-page .shirt-mark {
+  position: absolute;
+  top: 65%;
+  left: 36%;
+  z-index: 1;
+  width: clamp(2.5rem, 5.75vw, 3.6rem);
+  height: auto;
+}
+
+.postmodernist-draft-page .art-caption {
+  color: #f0e8dd;
+}
+
+.postmodernist-draft-page .style-preference {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.postmodernist-draft-page .style-preference legend {
+  width: 100%;
+  margin-bottom: 0.65rem;
+  color: #f1ca4b;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.postmodernist-draft-page .style-preference label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #59616c;
+  border-radius: 999px;
+  color: #f0e8dd;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.postmodernist-draft-page .style-preference label:focus-within {
+  outline: 2px solid #f1ca4b;
+  outline-offset: 3px;
+}
+
+.postmodernist-draft-page .style-preference input {
+  margin: 0;
+  accent-color: #f1ca4b;
+}
+
+.postmodernist-draft-page .preference-result[hidden],
+.postmodernist-draft-page [data-preference-panel][hidden] {
+  display: none;
+}
+
+.postmodernist-draft-page .preference-result {
+  margin-top: 0.9rem;
+}
+
+.postmodernist-draft-page [data-preference-panel="relaxed"] {
+  max-width: 34rem;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid #f1ca4b;
+  background: #2e3238;
+  color: #c4c6ca;
+  font-size: 0.85rem;
+}
+
+.postmodernist-draft-page .styling-tip {
+  max-width: 34rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #4a4e55;
+  border-left: 4px solid #f1ca4b;
+  border-radius: 0 0.8rem;
+  background: #2e3238;
+}
+
+.postmodernist-draft-page .styling-tip p {
+  margin: 0;
+  color: #c4c6ca;
+  font-size: 0.85rem;
+}
+
+.postmodernist-draft-page .styling-tip .styling-tip-label {
+  margin-bottom: 0.4rem;
+  color: #f1ca4b;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.postmodernist-draft-page .detail-callout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  max-width: 100%;
+  margin: 1rem 0 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid #4a4e55;
+  border-left: 4px solid #f1ca4b;
+  border-radius: 0 0.8rem;
+  background: #2e3238;
+}
+
+.postmodernist-draft-page .detail-zoom-window {
+  position: relative;
+  flex: 0 0 clamp(5rem, 10vw, 6.5rem);
+  overflow: hidden;
+  aspect-ratio: 1;
+  border: 2px solid #f1ca4b;
+  border-radius: 50%;
+  background: #292c31;
+}
+
+.postmodernist-draft-page .detail-zoom-scene {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250%;
+  aspect-ratio: 800 / 880;
+  transform: translate(-41%, -69%);
+}
+
+.postmodernist-draft-page .detail-zoom-scene img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.postmodernist-draft-page .detail-zoom-scene .detail-zoom-mark {
+  top: 65%;
+  left: 36%;
+  width: 10%;
+  height: auto;
+}
+
+.postmodernist-draft-page .detail-callout figcaption {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 18rem;
+  color: #c4c6ca;
+  font-size: 0.8rem;
+}
+
+.postmodernist-draft-page .detail-callout-label {
+  color: #f1ca4b;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.postmodernist-draft-page .hero-copy .hero-support,
+.postmodernist-draft-page .draft-disclaimer > p:last-child {
+  color: #c4c6ca;
+}
+
+.postmodernist-draft-page .preview-action:hover {
+  background: #d9b63f;
+}
+
+.postmodernist-draft-page .draft-disclaimer {
+  border-color: #f1ca4b;
+}

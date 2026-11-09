@@ -2,7 +2,7 @@
 
 // Read shared CSS values instead of maintaining a second palette or spacing list.
 (() => {
-  const tokens = getComputedStyle(document.documentElement);
+  const tokens = getComputedStyle(document.body);
   document.querySelectorAll("[data-color-token]").forEach((label) => {
     label.textContent = tokens
       .getPropertyValue(label.dataset.colorToken)
